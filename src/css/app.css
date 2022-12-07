@@ -1,0 +1,10 @@
+.card-section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  /* overflow: hidden; */
+  overflow-y: scroll;
+}
+.card-section::-webkit-scrollbar {
+  display: none;
+}
