@@ -1,3 +1,16 @@
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background-color: rgb(215, 215, 215);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 90, 95);
+  border-radius: 100vw;
+}
+
 .card-section::-webkit-scrollbar {
   display: none;
 }
@@ -30,25 +43,12 @@
     border-radius: 100vw;
     border: 5px solid rgb(215, 215, 215);
   }
-
-  body::-webkit-scrollbar {
-    width: 12px;
-  }
-  body::-webkit-scrollbar-track {
-    background-color: rgb(215, 215, 215);
-    border-radius: 100vw;
-    margin-block: 0.5em;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 90, 95);
-    border-radius: 100vw;
-  }
 }
 
 @supports (scrollbar-color: darkgreen lightgreen) {
   /* support for mozilla firefox */
   * {
-    scrollbar-color: darkgreen lightgreen;
+    scrollbar-color: rgb(255, 90, 95) rgb(215, 215, 215);
   }
 }
 
